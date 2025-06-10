@@ -74,17 +74,27 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => (
-              <motion.a
-                key={index}
-                href="#"
-                className="bg-white p-2 lg:p-3 rounded border-2 border-black"
-                whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
-              </motion.a>
-            ))}
+            {[BiLogoGmail, IoLogoLinkedin, IoLogoTwitter, BsGithub].map((Icon, index) => {
+              const urls = [
+                "mailto:vaysed.dev@gmail.com",
+                "https://www.linkedin.com/in/kun3741/",
+                "https://x.com/kun3741",
+                "https://github.com/kun3741",
+              ];
+              return (
+                <motion.a
+                  key={index}
+                  href={urls[index]}
+                  className="bg-white p-2 lg:p-3 rounded border-2 border-black"
+                  whileHover={{ scale: 1.1, backgroundColor: "#000", color: "#fff" }}
+                  whileTap={{ scale: 0.9 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon className="w-4 h-4 lg:w-5 lg:h-5" />
+                </motion.a>
+              );
+            })}
           </motion.div>
         </motion.div>
 
