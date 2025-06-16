@@ -25,7 +25,7 @@ const projects = [
     title: "Prudbay Clothes Support Bot",
     description: "A Telegram bot to automate customer support and order management for prudbaydelivery, featuring user registration, ticketing, order management, MongoDB & Airtable integration.",
     image: "/assets/prudbay-bot.png", // Вам потрібно буде замінити це на реальне зображення
-    link: `https://github.com/kun3741/prudbaysupport-tg`
+    link: `https://t.me/prudbaysupport_bot`
   },
   {
     id: 4,
