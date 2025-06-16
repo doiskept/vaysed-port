@@ -32,7 +32,7 @@ const projects = [
     title: "Nova Party Telegram Bot",
     description: "A comprehensive solution for event organizers that allows managing ticket sales directly within Telegram. The project was developed from scratch, including the backend, payment system integration logic, and administrative tools. The system enables users to easily browse events, purchase tickets via Monobank, and receive them as a QR code. For administrators, a panel has been implemented to create events, view revenue statistics, broadcast announcements, and validate tickets through a Telegram-integrated web app.",
     image: "https://kun.xxo.lol/ao4ll2ho.png",
-    link: `https://github.com/${githubUsername}/novaparty-tg` // Приклад посилання, замініть, якщо потрібно
+    link: `https://t.me/novaparty_bot` // Приклад посилання, замініть, якщо потрібно
   }
 ];
 
